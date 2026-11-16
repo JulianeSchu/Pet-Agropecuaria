@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetCare & Agro | Serviços</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🐾</div>
+        <span>PetCare <strong>& Agro</strong></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="servicos.html" class="nav-link active">Serviços</a>
+        <a href="localizacao.html" class="nav-link">Localização & Avaliações</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/5548999990000" target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 100px;">
+    <section class="section">
+      <div class="container">
+        <div class="section-title" style="text-align: center; max-width: 600px; margin: 0 auto 60px;">
+          <span class="badge-sub">DEPARTAMENTOS COMPLETOS</span>
+          <h2>Tudo para o seu pet e para o campo</h2>
+          <p style="color: var(--text-muted); margin-top: 12px;">Estrutura moderna equipada para garantir conforto, saúde e praticidade.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="card-icon">🛁</div>
+            <h3>Banho & Tosa</h3>
+            <p>Cosméticos hipoalergênicos, secagem humanizada e profissionais especializados.</p>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">🩺</div>
+            <h3>Clínica Veterinária</h3>
+            <p>Consultas de rotina, vacinação importada e suporte preventivo completo.</p>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">🌾</div>
+            <h3>Rações & Nutrição</h3>
+            <p>As melhores marcas de rações Super Premium e naturais para cães e gatos.</p>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">💊</div>
+            <h3>Farmácia Animal</h3>
+            <p>Antipulgas, vermífugos e medicamentos essenciais sempre disponíveis.</p>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">🏡</div>
+            <h3>Agro & Jardinagem</h3>
+            <p>Sementes, adubos, ferramentas e acessórios para cuidar da sua chácara.</p>
+          </div>
+          <div class="service-card">
+            <div class="card-icon">🚚</div>
+            <h3>Tele-Entrega Grátis</h3>
+            <p>Peça pelo WhatsApp e receba rapidamente na sua casa sem taxa na região.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-flex">
+      <div class="footer-brand">
+        <strong>PetCare & Agropecuária</strong>
+        <p>Amor genuíno pelos animais.</p>
+      </div>
+      <p class="copy">© 2026 PetCare. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5548999990000" target="_blank" class="whatsapp-float">
+    <img src="image/whatsapp.png" alt="Fale conosco!">
+  </a>
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => { nav.classList.toggle('open'); });
+  </script>
+</body>
+</html>

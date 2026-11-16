@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetCare & Agro | Localização & Avaliações</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🐾</div>
+        <span>PetCare <strong>& Agro</strong></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="servicos.html" class="nav-link">Serviços</a>
+        <a href="localizacao.html" class="nav-link active">Localização & Avaliações</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/5548999990000" target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 100px;">
+    <!-- Seção Localização -->
+    <section class="section" style="padding-bottom: 60px;">
+      <div class="container location-grid">
+        <div class="location-content">
+          <span class="badge-sub">ONDE ESTAMOS</span>
+          <h2>Venha nos fazer uma visita</h2>
+          <p style="color: var(--text-muted); margin-bottom: 24px;">Nossa loja está de portas abertas para receber você e seu companheiro com conforto.</p>
+
+          <div class="loc-box">
+            <div class="loc-item">
+              <strong>📍 Endereço</strong>
+              <p>Rodovia SC-401, 2300 — Florianópolis, SC</p>
+            </div>
+            <div class="loc-item">
+              <strong>🕒 Horário de Atendimento</strong>
+              <p>Segunda a Sábado: 08h às 19h<br>Domingo: 09h às 13h (Petshop)</p>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=Florianopolis+SC" target="_blank" class="btn btn-primary">Abrir Rota no Google Maps →</a>
+        </div>
+
+        <div class="map-container">
+          <iframe title="Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56571.60336381373!2d-48.5982458!3d-27.5953778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527394eb2c632d7%3A0x81bc550b6a04c746!2sFlorian%C3%B3polis%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1700000000000" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Avaliações -->
+    <section class="section" style="background: #FFFFFF; border-top: 1px solid var(--border);">
+      <div class="container">
+        <div class="section-title" style="text-align: center; max-width: 600px; margin: 0 auto 60px;">
+          <span class="badge-sub">PROVA SOCIAL</span>
+          <h2>O carinho de quem frequenta nossa loja</h2>
+          <p style="color: var(--text-muted); margin-top: 12px;">Veja o que os tutores dizem sobre a nossa rotina de cuidados.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Minha cachorrinha é super ansiosa, mas na PetCare ela entra super tranquila. A equipe tem um dom incrível!"</p>
+            <div class="author"><strong>Camila Ribeiro</strong><span>Tutora da Mel</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"A tele-entrega de ração salva demais o meu dia a dia. Peço pelo WhatsApp e em instantes já está na porta."</p>
+            <div class="author"><strong>Bruno Silveira</strong><span>Cliente Frequente</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Encontro tudo para o meu sítio e os medicamentos dos meus gatos no mesmo lugar. Preço justo."</p>
+            <div class="author"><strong>Patrícia Lima</strong><span>Cliente Agro & Pet</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-flex">
+      <div class="footer-brand">
+        <strong>PetCare & Agropecuária</strong>
+        <p>Amor genuíno pelos animais.</p>
+      </div>
+      <p class="copy">© 2026 PetCare. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5548999990000" target="_blank" class="whatsapp-float">
+    <img src="image/whatsapp.png" alt="Fale conosco!">
+  </a>
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => { nav.classList.toggle('open'); });
+  </script>
+</body>
+</html>

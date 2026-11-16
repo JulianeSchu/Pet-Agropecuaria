@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetCare & Agro | Contato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🐾</div>
+        <span>PetCare <strong>& Agro</strong></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="servicos.html" class="nav-link">Serviços</a>
+        <a href="localizacao.html" class="nav-link">Localização & Avaliações</a>
+        <a href="contato.html" class="nav-link active">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/5548999990000" target="_blank" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 130px;">
+    <section class="section" style="padding-top: 20px;">
+      <div class="container">
+        <div class="section-title" style="text-align: center; max-width: 600px; margin: 0 auto 50px;">
+          <span class="badge-sub">CANAIS DE ATENDIMENTO</span>
+          <h2>Fale com a nossa equipe</h2>
+          <p style="color: var(--text-muted); margin-top: 12px;">Escolha a melhor forma de falar conosco ou preencha o formulário abaixo.</p>
+        </div>
+
+        <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: start;">
+          
+          <!-- COLUNA DA ESQUERDA: INFORMAÇÕES DIRETAS (WHATSAPP E E-MAIL) -->
+          <div class="contact-info-card" style="background: #FFFFFF; padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-subtle);">
+            <h3 style="font-size: 1.4rem; margin-bottom: 24px;">Informações de Contato</h3>
+            
+            <div class="loc-box" style="margin-bottom: 32px;">
+              <div class="loc-item" style="margin-bottom: 20px;">
+                <strong>💬 WhatsApp Comercial</strong>
+                <p style="color: var(--text-muted); font-size: 1.05rem;">(48) 99999-0000</p>
+              </div>
+              <div class="loc-item" style="margin-bottom: 20px;">
+                <strong>📧 E-mail Oficial</strong>
+                <p style="color: var(--text-muted); font-size: 1.05rem;">contato@petcareagro.com.br</p>
+              </div>
+              <div class="loc-item">
+                <strong>🕒 Horário de Atendimento</strong>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Segunda a Sábado: 08h às 19h<br>Domingo: 09h às 13h (Petshop)</p>
+              </div>
+            </div>
+
+            <a href="https://wa.me/5548999990000?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informações." target="_blank" class="btn btn-whatsapp btn-full" style="padding: 14px;">
+              Abrir Conversa no WhatsApp →
+            </a>
+          </div>
+
+          <!-- COLUNA DA DIREITA: FORMULÁRIO DE CONTATO -->
+          <div class="contact-form-card" style="background: #FFFFFF; padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-subtle);">
+            <h3 style="font-size: 1.4rem; margin-bottom: 20px;">Envie uma mensagem</h3>
+            
+            <form onsubmit="event.preventDefault(); alert('Mensagem simulada enviada com sucesso! Em breve entraremos em contato.');" style="display: flex; flex-direction: column; gap: 18px;">
+              <div>
+                <label style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px;">Seu Nome</label>
+                <input type="text" placeholder="Ex: Maria Silva" required style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--border); font-family: inherit; font-size: 0.95rem; background: var(--bg);" />
+              </div>
+
+              <div>
+                <label style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px;">Telefone / WhatsApp</label>
+                <input type="tel" placeholder="(48) 99999-9999" required style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--border); font-family: inherit; font-size: 0.95rem; background: var(--bg);" />
+              </div>
+
+              <div>
+                <label style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px;">Assunto</label>
+                <select style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--border); font-family: inherit; font-size: 0.95rem; background: var(--bg);">
+                  <option>Agendamento de Banho & Tosa</option>
+                  <option>Consulta Veterinária</option>
+                  <option>Tele-entrega de Ração</option>
+                  <option>Dúvidas Gerais / Outros</option>
+                </select>
+              </div>
+
+              <div>
+                <label style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px;">Mensagem</label>
+                <textarea rows="4" placeholder="Escreva sua mensagem ou detalhes sobre o seu pet..." required style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--border); font-family: inherit; font-size: 0.95rem; background: var(--bg); resize: vertical;"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" style="margin-top: 6px; padding: 16px;">
+                Enviar Mensagem ✉️
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-flex">
+      <div class="footer-brand">
+        <strong>PetCare & Agropecuária</strong>
+        <p>Amor genuíno pelos animais.</p>
+      </div>
+      <p class="copy">© 2026 PetCare. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5548999990000" target="_blank" class="whatsapp-float">
+    <img src="image/whatsapp.png" alt="Fale conosco!">
+  </a>
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => { nav.classList.toggle('open'); });
+  </script>
+</body>
+</html>
